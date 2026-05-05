@@ -11,14 +11,14 @@ import process from "../assets/process.jpeg";
 
 export default function Home() {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-black text-white scroll-smooth">
 
       {/* NAVBAR */}
-      <header className="absolute top-0 left-0 w-full z-30 flex justify-end px-10 md:px-20 py-6">
+      <header className="fixed top-0 left-0 w-full z-30 flex justify-end px-10 md:px-20 py-6 bg-black/40 backdrop-blur-md">
         <nav className="flex gap-10 text-sm uppercase tracking-widest">
-          <a href="#origins">Origins</a>
-          <a href="/brochure.pdf" target="_blank" rel="noreferrer">Brochure</a>
-          <a href="#contact">Contact</a>
+          <a href="#origins" className="hover:text-[#b7c58b] transition">Origins</a>
+          <a href="/brochure.pdf" target="_blank" rel="noreferrer" className="hover:text-[#b7c58b] transition">Brochure</a>
+          <a href="#contact" className="hover:text-[#b7c58b] transition">Contact</a>
         </nav>
       </header>
 
@@ -32,7 +32,7 @@ export default function Home() {
             <img src={logo} alt="logo" className="w-28 mt-2 opacity-90" />
 
             <div>
-              <h1 className="text-6xl font-serif leading-[1.1]">
+              <h1 className="text-5xl md:text-6xl font-serif leading-[1.1]">
                 Crafted in <span className="text-[#b7c58b]">Soil.</span><br />
                 Revealed in <span className="text-[#b7c58b]">Flavour.</span>
               </h1>
@@ -42,7 +42,10 @@ export default function Home() {
                 every bean carries its origin.
               </p>
 
-              <a href="#origins" className="inline-block mt-8 border px-8 py-4 uppercase">
+              <a
+                href="#origins"
+                className="inline-block mt-8 border px-8 py-4 uppercase hover:bg-white hover:text-black transition"
+              >
                 Explore Origins
               </a>
             </div>
@@ -61,13 +64,12 @@ export default function Home() {
               OUR ORIGINS
             </p>
 
-            <h2 className="text-5xl font-serif">
+            <h2 className="text-4xl md:text-5xl font-serif">
               Distinct Origins.
               <span className="text-[#b7c58b]"> Distinct Character.</span>
             </h2>
           </div>
 
-          {/* 🔥 3D HOVER CARDS */}
           <div className="grid md:grid-cols-5 grid-cols-2 gap-6">
             {[coorg, araku, bababudangiri, wayanad, laos].map((img, i) => {
               const titles = ["COORG", "ARAKU", "BABABUDANGIRI", "WAYANAD", "LAOS PDR"];
@@ -107,14 +109,13 @@ export default function Home() {
 
       {/* PHILOSOPHY */}
       <section className="grid md:grid-cols-3 grid-cols-1 min-h-[500px]">
-
         <div className="bg-[#ede7dc] text-black flex items-center justify-center px-10 md:px-16 py-12">
           <div className="max-w-md">
             <p className="uppercase text-xs tracking-widest text-gray-500 mb-3">
               OUR PHILOSOPHY
             </p>
 
-            <h2 className="text-4xl font-serif mb-6 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-serif mb-6 leading-tight">
               Where Everything Begins With the <span className="italic">Earth.</span>
             </h2>
 
@@ -132,7 +133,6 @@ export default function Home() {
 
         <div className="bg-[#ede7dc] text-black flex items-center justify-center px-10 md:px-16 py-12">
           <div className="space-y-8 max-w-sm">
-
             <div>
               <h3 className="text-sm uppercase mb-1">Soil-first</h3>
               <p className="text-gray-600 text-sm">
@@ -160,10 +160,8 @@ export default function Home() {
                 Pure origins. Honest flavours. No shortcuts.
               </p>
             </div>
-
           </div>
         </div>
-
       </section>
 
       {/* PROCESS */}
@@ -172,12 +170,11 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/70"></div>
 
         <div className="relative z-10 flex flex-col justify-center min-h-[90vh] px-10 md:px-20 max-w-2xl">
-
           <p className="text-sm tracking-[4px] uppercase text-gray-400 mb-4">
             Our Process
           </p>
 
-          <h2 className="text-5xl font-serif leading-tight">
+          <h2 className="text-4xl md:text-5xl font-serif leading-tight">
             Handled with Care.<br />
             From Cherry to Cup.
           </h2>
@@ -196,13 +193,11 @@ export default function Home() {
           >
             View Brochure →
           </a>
-
         </div>
       </section>
 
       {/* FOOTER */}
       <footer id="contact" className="bg-[#1a2b1a] text-[#e6b84f] px-10 md:px-20 py-16 text-center">
-
         <p className="uppercase text-sm tracking-widest">
           Marketed & Packed By
         </p>
@@ -216,7 +211,6 @@ export default function Home() {
           Tel: +91 8042103133<br />
           ilaorigins@gmail.com
         </p>
-
       </footer>
 
     </div>
