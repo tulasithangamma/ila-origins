@@ -2,10 +2,10 @@ import hero from "../assets/hero.jpeg";
 import logo from "../assets/logo.png";
 import coorg from "../assets/coorg.jpg";
 import araku from "../assets/araku.jpg";
-import bababudangiri from "../assets/Bababudangiri.jpg";
+import bababudangiri from "../assets/bababudangiri.jpg";
 import wayanad from "../assets/wayanad.jpg";
 import laos from "../assets/laos.jpg";
-import originBg from "../assets/originBg.jpg";
+import originBg from "../assets/OriginBg.jpg";
 import about from "../assets/about.jpeg";
 import process from "../assets/process.jpeg";
 
