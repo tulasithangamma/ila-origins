@@ -23,8 +23,8 @@ export default function Home() {
       </header>
 
       {/* HERO */}
-      <section className="relative min-h-[85vh] md:min-h-screen">
-        <img src={hero} alt="hero" className="absolute inset-0 w-full h-full object-cover" />
+      <section className="relative min-h-[72vh] md:min-h-screen">
+        <img src={hero} alt="hero" className="absolute inset-0 w-full h-full object-cover object-[72%_center] md:object-center" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 to-black/40"></div>
 
         <div className="relative z-20 min-h-[85vh] md:min-h-screen flex items-center px-12 md:px-24">
@@ -166,7 +166,7 @@ export default function Home() {
 
       {/* PROCESS */}
       <section className="relative min-h-[90vh]">
-        <img src={process} alt="process" className="absolute inset-0 w-full h-full object-cover" />
+        <img src={process} alt="process" className="absolute inset-0 w-full h-full object-cover object-[72%_center] md:object-center" />
         <div className="absolute inset-0 bg-black/70"></div>
 
         <div className="relative z-10 flex flex-col justify-center min-h-[90vh] px-10 md:px-20 max-w-2xl">
