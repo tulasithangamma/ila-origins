@@ -41,10 +41,10 @@ export default function Home() {
                 From the misty hills of Coorg to Bababudangiri,
                 every bean carries its origin.
               </p>
-
+            <div className="flex justify-center md:justify-start"></div>
               <a
                 href="#origins"
-                className="inline-block mt-8 border px-5 py-2.5 md:px-8 md:py-4 uppercase hover:bg-white hover:text-black transition text-sm md:text-base"
+                className="inline-block mt-8 border px-7 py-3 md:px-8 md:py-4 uppercase hover:bg-white hover:text-black transition text-sm md:text-base"
               > 
                 Explore Origins
               </a>
