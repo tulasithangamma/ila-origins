@@ -14,8 +14,8 @@ export default function Home() {
     <div className="bg-black text-white scroll-smooth">
 
       {/* NAVBAR */}
-      <header className="fixed top-0 left-0 w-full z-30 flex justify-end px-10 md:px-20 py-6 bg-black/40 backdrop-blur-md">
-        <nav className="flex gap-6 md:gap-10 text-[11px] md:text-sm uppercase tracking-[0.25em]">
+      <header className="fixed top-0 left-0 w-full z-30 flex justify-end px-6 md:px-20 py-4 md:py-6 bg-black/40 backdrop-blur-md">
+        <nav className="flex gap-5 md:gap-10 text-[10px] md:text-sm uppercase tracking-[0.25em]">
           <a href="#origins" className="hover:text-[#b7c58b] transition">Origins</a>
           <a href="/brochure.pdf" target="_blank" rel="noreferrer" className="hover:text-[#b7c58b] transition">Brochure</a>
           <a href="#contact" className="hover:text-[#b7c58b] transition">Contact</a>
@@ -32,19 +32,19 @@ export default function Home() {
             <img src={logo} alt="logo" className="w-28 mt-2 opacity-90" />
 
             <div>
-              <h1 className="text-[54px] leading-[0.95] md:text-5xl md:text-6xl font-serif md:leading-[1.1] text-center md:text-left">
+              <h1 className="text-[34px] leading-[1] md:text-5xl lg:text-6xl font-serif md:leading-[1.1] text-center md:text-left">
                 Crafted in <span className="text-[#b7c58b]">Soil.</span><br />
                 Revealed in <span className="text-[#b7c58b]">Flavour.</span>
               </h1>
 
-              <p className="text-gray-300 mt-5 italic text-base md:text-base text-center md:text-left">
+              <p className="text-gray-300 mt-5 italic text-sm md:text-base text-center md:text-left">
                 From the misty hills of Coorg to Bababudangiri,
                 every bean carries its origin.
               </p>
 
               <a
                 href="#origins"
-                className="inline-block mt-8 border px-7 py-3 md:px-8 md:py-4 uppercase hover:bg-white hover:text-black transition text-sm md:text-base"
+                className="inline-block mt-8 border px-5 py-2.5 md:px-8 md:py-4 uppercase hover:bg-white hover:text-black transition text-sm md:text-base"
               > 
                 Explore Origins
               </a>
@@ -127,11 +127,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="h-[350px] md:h-auto">
+        <div className="h-[220px] md:h-auto">
           <img src={about} alt="about" className="w-full h-full object-cover" />
         </div>
 
-        <div className="bg-[#ede7dc] text-black flex items-center justify-center px-10 md:px-16 py-12">
+        <div className="bg-[#ede7dc] text-black flex items-center justify-center px-6 md:px-16 py-10 md:py-12">
           <div className="space-y-8 max-w-sm">
             <div>
               <h3 className="text-sm uppercase mb-1">Soil-first</h3>
