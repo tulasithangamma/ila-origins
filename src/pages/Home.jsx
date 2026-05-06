@@ -15,7 +15,7 @@ export default function Home() {
 
       {/* NAVBAR */}
       <header className="fixed top-0 left-0 w-full z-30 flex justify-end px-10 md:px-20 py-6 bg-black/40 backdrop-blur-md">
-        <nav className="flex gap-10 text-sm uppercase tracking-widest">
+        <nav className="flex gap-6 md:gap-10 text-[11px] md:text-sm uppercase tracking-[0.25em]">
           <a href="#origins" className="hover:text-[#b7c58b] transition">Origins</a>
           <a href="/brochure.pdf" target="_blank" rel="noreferrer" className="hover:text-[#b7c58b] transition">Brochure</a>
           <a href="#contact" className="hover:text-[#b7c58b] transition">Contact</a>
@@ -23,30 +23,28 @@ export default function Home() {
       </header>
 
       {/* HERO */}
-      <section className="relative min-h-screen">
+      <section className="relative min-h-[85vh] md:min-h-screen">
         <img src={hero} alt="hero" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 to-black/40"></div>
 
-        <div className="relative z-20 min-h-screen flex items-center px-12 md:px-24">
-          <div className="flex items-start gap-10 max-w-4xl">
+        <div className="relative z-20 min-h-[85vh] md:min-h-screen flex items-center px-12 md:px-24">
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-5 md:gap-10 max-w-4xl">
             <img src={logo} alt="logo" className="w-28 mt-2 opacity-90" />
 
             <div>
-              <h1 className="text-5xl md:text-6xl font-serif leading-[1.1]">
+              <h1 className="text-[54px] leading-[0.95] md:text-5xl md:text-6xl font-serif md:leading-[1.1] text-center md:text-left">
                 Crafted in <span className="text-[#b7c58b]">Soil.</span><br />
                 Revealed in <span className="text-[#b7c58b]">Flavour.</span>
               </h1>
 
-              <p className="text-gray-300 mt-5 italic">
+              <p className="text-gray-300 mt-5 italic text-base md:text-base text-center md:text-left">
                 From the misty hills of Coorg to Bababudangiri,
                 every bean carries its origin.
               </p>
 
-              <a
+              <a>
                 href="#origins"
-                className="inline-block mt-8 border px-8 py-4 uppercase hover:bg-white hover:text-black transition"
-              >
-                Explore Origins
+                className="inline-block mt-8 border px-7 py-3 md:px-8 md:py-4 uppercase hover:bg-white hover:text-black transition text-sm md:text-base"
               </a>
             </div>
           </div>
